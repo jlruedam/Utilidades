@@ -1,0 +1,15 @@
+html{
+    font-size: 62.5%;
+}
+
+.main-container{
+    display: flex;
+}
+
+.btn-container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

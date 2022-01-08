@@ -1,0 +1,11 @@
+.btn-type1{
+    width: 20rem;
+    height: 5rem;
+    background: linear-gradient(90deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 20px;
+    color:hsla(43, 100%, 52%, 1);
+    font-size: 2rem;
+    font-family:Copperplate;
+}
