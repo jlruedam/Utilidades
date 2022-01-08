@@ -3,12 +3,14 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
-    width: 100vh;
-    height: 100vh;
+    width: 95vw;
+    height: 95vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -32,7 +34,7 @@ main{
     height: 3rem;
     padding: 10px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 40px;
     text-align: center;
     margin: 10px auto;
     position: relative;
@@ -41,14 +43,15 @@ main{
 
 .card__content{
     background-color: antiquewhite;
-    border-radius: 20px;
-    border: 1px solid black;
-    padding: 20px;
+    /* border-radius: 20px; */
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border: 1px solid azure;
+    padding: 30px;
 
     display: flex-box;
     justify-content: center;
     align-items: center;
-    
     
 
 }
