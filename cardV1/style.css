@@ -1,0 +1,65 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    width: 100vh;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    
+}
+
+.card{
+    border: 1px solid black;
+    width: 40rem;
+    height: fit-content;
+    font-size: 1.6rem;
+}
+
+.card__cabecera{
+    background-color: cadetblue;
+    color: azure;
+    width: 25rem;
+    height: 3rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    top:30px;
+}
+
+.card__content{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+
+    display: flex-box;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.card__img{
+    border-radius: 20px;
+    margin: 10px 30px;
+
+}
+
+.card__paragraph{
+    color: cadetblue;
+    text-align: justify;
+}
