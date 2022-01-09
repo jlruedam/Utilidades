@@ -45,7 +45,9 @@ html{
     display:flex;
     position: relative;
     justify-content: space-between;
-    height: 75vh;
+    min-height: 75vh;
+    
+
 }
 
 .main__aside{
@@ -59,6 +61,7 @@ html{
     padding: 10px;
     text-align: justify;
     font-size: 1.6rem;
+
 }
 
 .main__aside .aside-list{
