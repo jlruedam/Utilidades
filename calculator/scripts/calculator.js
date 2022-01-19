@@ -6,7 +6,7 @@ var showScreen="";
 
 function calculate(e){
     var key=e.path[0].value;
-    const operators="+-/*.=";
+    const operators="+-/*.";
     const digits="0123456789";
     const actions=["CE", "C","root"]
 
@@ -22,6 +22,7 @@ function calculate(e){
         if(key=="C"){
 
             screenCalculator.value="";
+            showScreen="";
 
         }
     }
@@ -41,6 +42,14 @@ function calculate(e){
            screenCalculator.value=showScreen;
 
        }
+    }
+
+
+    if(key=="="){
+
+        showScreen=eval(showScreen);
+        screenCalculator.value=showScreen;
+
     }
         
     console.log(e.path[0].value);
