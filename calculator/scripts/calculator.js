@@ -1,10 +1,18 @@
 var keyboard=document.getElementById("keyboard");
 var screenCalculator=document.getElementById("screen");
 keyboard.addEventListener("click", calculate, false);
+screenCalculator.addEventListener("keydown", calculateScreen,false);
 
 var showScreen="";
 
+
+function calculateScreen(e){
+    console.log(e.type);
+    
+}
+
 function calculate(e){
+
     var key=e.path[0].value;
     const operators="+-/*.";
     const digits="0123456789";
@@ -14,16 +22,14 @@ function calculate(e){
 
         if(key=="CE"){
 
-            showScreen=showScreen.slice(0,-1);
+            showScreen=screenCalculator.value.slice(0,-1);
             screenCalculator.value=showScreen;
-
         }
 
         if(key=="C"){
 
-            screenCalculator.value="";
             showScreen="";
-
+            screenCalculator.value=showScreen;
         }
     }
 
@@ -31,25 +37,22 @@ function calculate(e){
 
         showScreen+=key;
         screenCalculator.value=showScreen;
-
     }
     
     if(operators.includes(key)){
 
-       if(!operators.includes(showScreen[showScreen.length-1])){
+        if(  !operators.includes(screenCalculator.value[screenCalculator.value.length-1]) 
+            && !screenCalculator.value=="") {
 
-           showScreen+=key;
-           screenCalculator.value=showScreen;
-
+                showScreen+=key;
+                screenCalculator.value=showScreen;
        }
     }
 
-
     if(key=="="){
 
-        showScreen=eval(showScreen);
-        screenCalculator.value=showScreen;
-
+        screenCalculator.value=eval(screenCalculator.value);
+        showScreen="";
     }
         
     console.log(e.path[0].value);
