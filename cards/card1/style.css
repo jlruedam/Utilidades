@@ -11,7 +11,7 @@ html{
 main{
     width: 95vw;
     height: 95vh;
-    background-color: black;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,10 +21,15 @@ main{
 }
 
 .card{
-    border: 1px solid black;
     width: 40rem;
-    height: fit-content;
+    /* height: fit-content; */
     font-size: 1.6rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    
+    
 }
 
 .card__cabecera{
@@ -39,6 +44,11 @@ main{
     margin: 10px auto;
     position: relative;
     top:30px;
+    box-shadow: 0 10px 10px 0 black;
+    opacity: 0.7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
 }
 
 .card__content{
@@ -48,12 +58,12 @@ main{
     border-bottom-left-radius: 70px;
     border: 1px solid azure;
     padding: 30px;
-
     display: flex-box;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 10px 0 black;
+    box-sizing: border-box;
     
-
 }
 
 .card__img{
